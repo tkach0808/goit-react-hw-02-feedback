@@ -1,0 +1,49 @@
+.buttonWrp {
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.feedbackButton {
+  position: relative;
+  background: #1aab8a;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  width: 90px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.feedbackButton:hover {
+  background: #fff;
+  color: #1aab8a;
+}
+.feedbackButton:before,
+.feedbackButton:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+.feedbackButton:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.feedbackButton:hover:before,
+.feedbackButton:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

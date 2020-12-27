@@ -1,0 +1,23 @@
+.sectionWrp {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sectionTittle {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.sectionTittle::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #1aab8a;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.sectionContent {
+  margin-bottom: 30px;
+}

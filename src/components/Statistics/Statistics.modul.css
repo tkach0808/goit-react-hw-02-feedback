@@ -1,0 +1,10 @@
+.statisticSection {
+  padding-left: 185px;
+  text-align: left;
+}
+
+.statistic {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: oblique;
+}
