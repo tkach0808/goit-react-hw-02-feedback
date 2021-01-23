@@ -29,13 +29,17 @@ export default class App extends Component {
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
     const positivePercentage = Math.round(
-      this.countPositiveFeedbackPercentage(total, good)
+      this.countPositiveFeedbackPercentage(total)
     );
+    const buttons = Object.keys(this.state);
 
     return (
       <div className={s.feedBacBlock}>
         <Section title="please leave a feedback">
-          <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} />
+          <FeedbackOptions
+            options={buttons}
+            onLeaveFeedback={this.onLeaveFeedback}
+          />
         </Section>
         <Section title="Statistics">
           {total > 0 ? (
